@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './css/styles.css';
+import {skills,listAcademy,jobsList} from './data/datasource';
 import PorfolioFixed from './components/PortfolioFixed';
 import PorfolioContent from './components/PortfolioContent';
 
 class App extends Component {
     render() {
+        let data={skills:skills,listAcademy:listAcademy,jobsList:jobsList};
         return (<div>
                     <PorfolioFixed/>
-                    <PorfolioContent/>
+                    <PorfolioContent data={data} />
                 </div>);
     }
 }
