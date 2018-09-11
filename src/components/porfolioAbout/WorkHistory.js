@@ -15,8 +15,8 @@ class WorkHistory extends Component {
               NOTE: you must pass values from the each job object
                     to the <Job> component as props...
             */
-           this.props.jobsList.map(element=>{
-             return <Job key={element} job={element} />
+           this.props.jobsList.map((element,index)=>{
+             return <Job key={element+index} job={element} />
            })
           }
         </div>

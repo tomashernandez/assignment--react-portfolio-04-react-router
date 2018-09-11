@@ -3,7 +3,6 @@ import Skills from './Skill'
 
 class SkillsList extends Component {
   render() {
-    console.log(this.props.skills);
     return (
       /* receive `skills` array as props from App compnonent */
       <section>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {skills,listAcademy,jobsList} from './data/datasource';
+import {skills,listAcademy,jobsList} from './data/datasourceAbout';
+import { projectData } from './data/datasourceProjects';
 import PorfolioFixed from './components/PortfolioFixed';
 import PorfolioContent from './components/PortfolioContent';
 
@@ -8,7 +9,7 @@ class App extends Component {
         let data={skills:skills,listAcademy:listAcademy,jobsList:jobsList};
         return (<div>
                     <PorfolioFixed/>
-                    <PorfolioContent data={data} />
+                    <PorfolioContent data={data} projectData={projectData}/>
                 </div>);
     }
 }

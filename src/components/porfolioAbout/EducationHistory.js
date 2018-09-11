@@ -16,8 +16,8 @@ class EducationHistory extends Component {
               NOTE: you must pass values from each education object
                     to the <EduTitle> component as props...
             */
-           this.props.listAcademy.map(element=>{
-            return <Title key={element} academy={element} />
+           this.props.listAcademy.map((element,index)=>{
+            return <Title key={element +index } academy={element} />
            })
           }
 
